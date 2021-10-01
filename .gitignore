@@ -1,3 +1,8 @@
 .idea/*
 __pycache__/*
 *.pyc
+geckodriver.log
+.pytest_cache
+
+# Don't push up any screenshots if some were left in folder
+screenshots/*
