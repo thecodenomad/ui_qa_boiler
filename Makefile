@@ -14,4 +14,7 @@ python-headless-test: python-docker
 
 .PHONY: python-test
 python-test:
+	pytest -s src/python/test*.py -m "not flakey"
+
+python-test-all:
 	pytest -s src/python/test*.py
