@@ -6,6 +6,11 @@ from selenium.webdriver.firefox.options import Options
 
 
 @pytest.fixture(scope='session')
+def baseurl():
+    yield "http://localhost:8080"
+
+
+@pytest.fixture(scope='session')
 def screenshot_folder():
     base_folder = "./screenshots"
     if os.path.exists("/.dockerenv"):
